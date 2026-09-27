@@ -19,20 +19,24 @@ export const Footer: React.FC<FooterProps> = ({ supportEmail, supportWhatsApp })
           <div className="flex items-center gap-3">
             <a
               href={`mailto:${supportEmail}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-neutral-900 hover:bg-neutral-800 text-white transition-colors border border-neutral-800"
+              title={`Email: ${supportEmail}`}
             >
               <Mail className="w-3.5 h-3.5 text-red-500" />
-              <span>Contact Support</span>
+              <span>Contact Support ({supportEmail})</span>
             </a>
             {supportWhatsApp && (
               <a
-                href={supportWhatsApp.startsWith('http') ? supportWhatsApp : `https://wa.me/${supportWhatsApp.replace(/\+/g, '')}`}
+                href={supportWhatsApp.startsWith('http') ? supportWhatsApp : `https://wa.me/${supportWhatsApp.replace(/[^0-9]/g, '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-neutral-900 hover:bg-neutral-800 text-white transition-colors border border-neutral-800"
+                title="Chat on WhatsApp"
               >
                 <MessageCircle className="w-3.5 h-3.5 text-emerald-500" />
-                <span>WhatsApp Support</span>
+                <span>WhatsApp (+234 703 357 0538)</span>
               </a>
             )}
           </div>

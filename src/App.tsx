@@ -25,6 +25,8 @@ export default function App() {
           ...DEFAULT_CONFIG,
           ...parsed,
           destinationUrl: TARGET_AFFILIATE_URL,
+          supportEmail: parsed.supportEmail || DEFAULT_CONFIG.supportEmail,
+          supportWhatsApp: parsed.supportWhatsApp || DEFAULT_CONFIG.supportWhatsApp,
           videoUrl: parsed.videoUrl || DEFAULT_CONFIG.videoUrl,
           videoType: parsed.videoType || DEFAULT_CONFIG.videoType,
         };

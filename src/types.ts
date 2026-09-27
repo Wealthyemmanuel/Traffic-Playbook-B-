@@ -14,6 +14,6 @@ export const DEFAULT_CONFIG: PageConfig = {
   videoUrl: 'https://player.vimeo.com/video/1229753592?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1',
   destinationUrl: TARGET_AFFILIATE_URL,
   senderName: 'Emmanuel',
-  supportEmail: 'wealthyemmanuelifenna@gmail.com',
-  supportWhatsApp: 'https://wa.me/message/YOUR_WHATSAPP_LINK',
+  supportEmail: 'hello@emmanuelifennna.com.ng',
+  supportWhatsApp: 'https://wa.me/2347033570538',
 };

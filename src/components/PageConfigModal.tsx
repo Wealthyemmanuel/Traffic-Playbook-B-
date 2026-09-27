@@ -130,12 +130,12 @@ export const PageConfigModal: React.FC<PageConfigModalProps> = ({
             </div>
             <div>
               <label className="block text-xs font-semibold text-neutral-700 mb-1">
-                Presenter Name
+                WhatsApp Link / Number
               </label>
               <input
                 type="text"
-                value={formData.senderName}
-                onChange={(e) => setFormData({ ...formData, senderName: e.target.value })}
+                value={formData.supportWhatsApp}
+                onChange={(e) => setFormData({ ...formData, supportWhatsApp: e.target.value })}
                 className="w-full px-3 py-2 rounded-lg border border-neutral-300 text-xs text-neutral-900 outline-none focus:border-red-600"
               />
             </div>
